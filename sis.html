@@ -1,0 +1,16 @@
+<h1 class="entry-title main_title">Laun í nýjum kjarasamningi við SÍS</h1>
+
+<div id="parameters">
+		<select id="jobname" onchange="resetGraph(0)"><option disabled selected value> &#8212; veldu starfsheiti &#8212; </option><option>Ræsting</option><option>Verkamaður 2</option><option>Stöðumælavörður</option><option>Tækjamaður 1</option><option>Matráður 1</option><option>Aðstoðarmatráður</option><option>Skólaliði</option><option>Félagsleg liðveisla 1</option><option>Matráður 2</option><option>Heimaþjónusta 2</option><option>Birgðastjóri</option><option>Verkamaður 3 m/flokkstjórn</option><option>Tækjamaður 2</option><option>Heimaþjónusta III</option><option>Umönnun á hjúkrunarheimili 1</option><option>Umsjónamaður leiksvæða</option><option>Stm. í leiksk. m. stuðning II</option><option>Félagsliði í heimaþjónustu</option><option>Umönnun á hjúkrunarheimili II</option><option>Félagsliði í heimaþjónustu II (með flokksstjórn)</option><option>Starfsmaður í skóla með stuðning</option><option>Matráður 3</option><option>Stuðningsfulltrúi í skóla</option><option>Húsvörður 4</option></select> <select id="step" onchange="setStep(this)"><option value="0">Grunnþrep</option><option value="1">Persónuálag 2%</option><option value="2">Persónuálag 4%</option><option value="3">Persónuálag 6%</option><option value="4">Persónuálag 8%</option><option value="5">Persónuálag 10%</option><option value="6">Persónuálag 12%</option><option value="7">Persónuálag 14%</option><option value="8">Persónuálag 16%</option></select>
+	</div>
+<div id="extrainfo">
+</div>
+<div class="port" style="min-height: 500px;">
+	<canvas id="canvas"></canvas>
+</div>
+<input type="hidden" id="language" value="0" />
+Ef þú sérð eitthvað athugavert við þessa útreikninga, sendu tölvupóst á <a href="mailto:benjamin@efling.is">benjamin@efling.is</a>.
+<script src="js/Chart.js"></script>
+<script src="js/sis-laun.js"></script>
+<script src="js/sis-script.js"></script>
+<script src="js/sis-strings.js"></script>
