@@ -101,7 +101,7 @@
 			                    if (tooltipItem.datasetIndex != data.datasets.length - 1) {
 			                        return wageitem + ": " + numberSeparated(amount) + "kr";
 			                    } else {
-			                        return [wageitem + ": " + numberSeparated(amount) + "kr", str_alls[id] + numberSeparated(total) + "kr"];
+			                        return [wageitem + ": " + numberSeparated(amount) + "kr", str_alls[id] + " " + numberSeparated(total) + "kr"];
 			                    }
 			                }
 			            }
