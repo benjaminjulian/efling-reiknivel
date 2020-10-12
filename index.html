@@ -1,0 +1,19 @@
+<h1 class="entry-title main_title">Laun í nýjum kjarasamningi við Reykjavíkurborg</h1>
+<p><em>Birt með fyrirvara um námundunarskekkju og innsláttar- og reiknivillur.</em></p>
+<div id="parameters" style="margin-bottom: 20px">
+		<select id="jobname" onchange="resetGraph()" style="margin-bottom: 20px"><option disabled selected value> &#8212; veldu starfsheiti &#8212; </option><option>Aðstoðar matreiðslumaður</option><option>Aðstoðarmaður í eldhúsi</option><option>Aðstoðarmaður í mötuneyti</option><option>Afleysingaflokkstjóri</option><option>Dagræsting</option><option>Deildarstjóri C</option><option>Dráttarvélarstjóri</option><option>Félagsliði í búsetuþjónustu</option><option>Félagsliði í Gistiskýli</option><option>Félagsliði í heimaþjónustu</option><option>Félagsliði í umönnun</option><option>Félagsliði þjónustukjarna</option><option>Flokkstjóri félagsleg heimaþjónusta</option><option>Flokkstjóri II</option><option>Flokkstjóri við sorphirðu</option><option>Kaffiumsjónarmaður</option><option>Leiðbeinandi 1</option><option>Leiðbeinandi 1 með stuðning</option><option>Leiðbeinandi 2</option><option>Leiðbeinandi 2 með stuðning</option><option>Leikskólaliði</option><option>Leikskólaliði með stuðning</option><option>Matráður &#8211; vistheimili barna</option><option>Næturvörður</option><option>Ræstitæknir dagvinna</option><option>Ræstitæknir dagvinna</option><option>Sérhæfður verkamaður</option><option>Skólaliði í eldhús</option><option>Starfsmaður 2</option><option>Starfsmaður 2 með stuðning</option><option>Starfsmaður búsetuþjónustu</option><option>Starfsmaður framreiðslueldhúss</option><option>Starfsmaður heimaþjónustu</option><option>Starfsmaður móttökueldhúss</option><option>Starfsmaður umönnun</option><option>Starfsmaður umsjón í eldhús</option><option>Starfsmaður viðbragðsteymis</option><option>Starfsmaður vistheimilis</option><option>Starfsmaður þjónustukjarna</option><option>Starfsmaður þvottahúss</option><option>Umsjónarmaður matstofu</option><option>Verkamaður við bæjarframkvæmdir</option><option>Verkamaður við garðyrkju</option><option>Verkamaður við sorphirðu</option><option>Yfirmaður mötuneytis leikskóla.</option></select> <select onchange="setStep(this)"><option value="0">Grunnþrep</option><option value="1">Launaþrep 1</option><option value="2">Launaþrep 2</option><option value="3">Launaþrep 3</option><option value="4">Launaþrep 4</option><option value="5">Launaþrep 5</option><option value="6">Launaþrep 6</option></select><br />
+		<input type="checkbox" id="tenhours" onclick="clickcheck('thirteenhours')"><label for="tenhours"> Ég er með &#8220;tíu tíma&#8221; (yfirvinna í leikskólum)</label><br />
+		<input type="checkbox" id="thirteenhours" onclick="clickcheck('tenhours')"><label for="thirteenhours"> Ég er með &#8220;þrettán tíma&#8221; (yfirvinna á velferðarsviði)</label>
+</div>
+<div id="extrainfo" style="margin-bottom: 20px">
+</div>
+<div id="port" style="min-height: 500px;"><canvas id="canvas"></canvas></div>
+<input type="hidden" id="language" value="0" />
+<script src="Chart.js"></script>
+<script src="d3.min_.js"></script>
+<script src="laun.js"></script>
+<script src="tafla-1.js"></script>
+<script src="strings.js"></script>
+<script src="script.js"></script>
+
+Sendið ábendingar um villur eða aðrar athugasemdir á <a href="mailto:benjamin@efling.is">benjamin@efling.is</a>.
